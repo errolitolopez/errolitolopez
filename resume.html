@@ -12,8 +12,27 @@
 </head>
 <body>
 
-<div id="navbar-container"></div>
-<div id="background-container"></div>
+<div id="button-container"
+     class="position-fixed top-0 start-0 p-4 z-1 d-flex gap-2">
+
+    <button
+            type="button"
+            class="theme-toggle-btn btn btn-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+            id="printButton"
+            aria-label="Print Resume">
+        <i class="bi bi-printer"></i>
+    </button>
+
+    <a
+            href="assets/pdf/Errolito%20Lopez%20-%20Resume.pdf"
+            download
+            class="btn btn-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+            aria-label="Download Resume">
+        <i class="bi bi-download"></i>
+    </a>
+
+</div>
+
 
 <div class="a4-pages-wrapper">
     <div class="a4-page">
@@ -229,28 +248,14 @@
     </div>
 </div>
 
-<div id="print-button-container"
-     class="position-fixed bottom-0 end-0 p-4 z-1" style="margin-bottom: 70px">
-    <button
-            type="button"
-            class="theme-toggle-btn btn btn-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm"
-            id="printButton"
-            aria-label="Print Resume">
-        <i class="bi bi-download"></i>
-    </button>
-</div>
 
-<div id="footer-container" style="margin-top: 70px"></div>
+<div id="footer-container" style="margin-top: 400px"></div>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/background.js"></script>
 <script src="js/footer.js"></script>
-<script src="js/navbar.js"></script>
+<script src="js/header.js"></script>
 <script>
-    createBackground();
-    createFooter();
-    createNavbar();
-
     document.getElementById('printButton').addEventListener('click', function () {
         window.print();
     });

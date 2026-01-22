@@ -11,13 +11,13 @@
 </head>
 <body>
 
-<div id="navbar-container"></div>
+<div id="header-container"></div>
 <div id="background-container"></div>
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: calc(100vh - 56px);">
     <div class="card text-center card-custom">
 
-        <div class="d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center m-2">
             <img src="assets/images/profile.jpg" alt="Profile" class="rounded-circle img-fluid"
                  style="width: 192px; height: 192px; object-fit: cover;">
         </div>
@@ -45,12 +45,15 @@
 
     <div class="card rounded-0 border-0" style="width: 25rem; height: 30rem;">
         <div class="card-body">
-            <h1 style="font-size: 5rem">Hello</h1>
-            <h5>Here's who I am & what I do...</h5>
+            <h1 class="fw-bold" style="font-size: 3rem">Hello</h1>
+            <h6>Here's who I am & what I do...</h6>
 
-            <div class="container mb-3 mt-3 d-flex gap-2">
-                <a href="https://errolitolopez.site/resume" class="btn btn-custom-md shadow-sm rounded-5">RESUME</a>
-                <a href="https://errolitolopez.site/projects" class="btn btn-custom-md shadow-sm rounded-5">PROJECTS</a>
+            <div class="container my-3 d-flex flex-wrap gap-2">
+                <a href="https://errolitolopez.site/resume"
+                   class="btn btn-custom-md shadow-sm rounded-5 w-100 w-sm-auto">RESUME</a>
+
+                <a href="https://errolitolopez.site/projects"
+                   class="btn btn-custom-md shadow-sm rounded-5 w-100 w-sm-auto">PROJECTS</a>
             </div>
 
             <p>I’m a Java Developer. I’ve mainly worked with Java and Spring Boot. I’ve contributed to projects ranging
@@ -59,16 +62,14 @@
     </div>
 </div>
 
-<div id="footer-container"></div>
-
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/background.js"></script>
 <script src="js/footer.js"></script>
-<script src="js/navbar.js"></script>
+<script src="js/header.js"></script>
 <script>
     createBackground();
     createFooter();
-    createNavbar();
+    createHeader();
 </script>
 </body>
 </html>

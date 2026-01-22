@@ -23,18 +23,14 @@
         border: none;
         box-shadow: none;
         break-after: page;
-        min-height: 297mm;
+        height: 250mm;
         width: 210mm;
         margin: 0;
-    }
-
-    #background-container {
-        display: none;
     }
 }
 
 @media print {
-    #navbar-container, #footer-container, #print-button-container {
+    #navbar-container, #button-container, #footer-container {
         display: none;
     }
 

@@ -9,7 +9,7 @@ function createBackground() {
         <div class="container-fluid h-100 p-0">
             <div class="row g-0 h-100">
                 <div class="col-6 color-custom"></div>
-                <div class="col-6 color-custom-md"></div>
+                <div class="col-6 bg-white"></div>
             </div>
         </div>
     `;
