@@ -1,0 +1,73 @@
+body {
+    font-family: 'Aptos', sans-serif;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/Aptos.ttf') format('truetype');
+}
+
+.card-custom {
+    background-color: #eef3ee;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2), 0 -2px 8px rgba(0, 0, 0, 0.1);
+    height: 30rem;
+    width: 25rem;
+    border-radius: 0;
+    border: none;
+}
+
+.color-custom {
+    background-color: #cddacc;
+}
+
+.color-custom-md {
+    background-color: #dee7dd;
+}
+
+.color-custom-light {
+    background-color: #eef3ee;
+}
+
+.btn-custom {
+    font-weight: bold;
+    background-color: #cddacc;
+    color: #000;
+}
+
+.btn-custom-md {
+    font-weight: bold;
+    background-color: #dee7dd;
+    color: #000;
+}
+
+.btn-custom-light {
+    font-weight: bold;
+    background-color: #eef3ee;
+    color: #000;
+}
+
+.btn-custom:hover {
+    background-color: #dee7dd;
+    transform: scale(1.125);
+}
+
+.btn-custom-md:hover {
+    background-color: #eef3ee;
+    transform: scale(1.125);
+}
+
+.icon img {
+    width: 1.25em;
+    height: 1.25em;
+    flex-shrink: 0;
+    fill: currentColor;
+    transition: transform 0.2s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.125);
+}
+
+
