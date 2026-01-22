@@ -8,7 +8,7 @@ function createNavbar() {
 
     nav.innerHTML = `
         <div class="container-fluid px-4">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://errolitolopez.site">
                 <span class="h2 fw-bold">Errolito Lopez</span>
                 <span>/ Java Developer</span>
             </a>
@@ -19,9 +19,9 @@ function createNavbar() {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://errolitolopez.site">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://errolitolopez.site/resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://errolitolopez.site/projects">Projects</a></li>
                 </ul>
             </div>
         </div>
