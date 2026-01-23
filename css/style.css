@@ -24,7 +24,7 @@ body {
     margin-bottom: 2rem;
     max-height: 80vh;
     min-height: 50vh;
-    width: 25rem;
+    max-width: 25rem;
 }
 
 .badge {
