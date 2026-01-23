@@ -1,3 +1,8 @@
+:root {
+    --bg-color: #f3f4f6;
+    --text-color: #1f2937;
+}
+
 body {
     font-family: 'Aptos', sans-serif;
 }
@@ -9,65 +14,128 @@ body {
     src: url('../assets/fonts/Aptos.ttf') format('truetype');
 }
 
-.card-custom {
-    background-color: #eef3ee;
-    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2), 0 -2px 8px rgba(0, 0, 0, 0.1);
-    height: 30rem;
+.card {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    max-height: 80vh;
+    min-height: 50vh;
     width: 25rem;
-    border-radius: 0;
-    border: none;
 }
 
-.color-custom {
-    background-color: #cddacc;
+.badge {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.color-custom-md {
-    background-color: #dee7dd;
+.btn-primary {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
 }
 
-.color-custom-light {
-    background-color: #eef3ee;
+.card img {
+    border-radius: 2rem 2rem 0 0;
+    border: 2px solid white;
 }
 
-.btn-custom {
-    font-weight: bold;
-    background-color: #cddacc;
-    color: #000;
-}
-
-.btn-custom-md {
-    font-weight: bold;
-    background-color: #dee7dd;
-    color: #000;
-}
-
-.btn-custom-light {
-    font-weight: bold;
-    background-color: #eef3ee;
-    color: #000;
-}
-
-.btn-custom:hover {
-    background-color: #dee7dd;
-    transform: scale(1.125);
-}
-
-.btn-custom-md:hover {
-    background-color: #eef3ee;
-    transform: scale(1.125);
-}
-
-.icon img {
-    width: 1.25em;
-    height: 1.25em;
-    flex-shrink: 0;
-    fill: currentColor;
-    transition: transform 0.2s ease;
+.icon-link {
+    color: inherit;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .icon-link:hover {
-    transform: scale(1.125);
+    transform: translateY(-2px);
+    opacity: 0.85;
 }
 
+a {
+    color: inherit;
+}
+
+header, footer {
+    background-color: var(--bg-color);
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-image: radial-gradient(circle at top left, hsl(220 13% 95%), hsl(220 13% 91%));
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 512px;
+    height: 512px;
+    z-index: -1;
+    background-image: url('../assets/images/java-black.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    opacity: 0.04;
+    pointer-events: none;
+    filter: brightness(1);
+}
+
+body.dark-theme {
+    --bg-color: #0f172a;
+    --text-color: #f9fafb;
+    --border-color: #334155cc;
+    background-image: radial-gradient(circle at top left, hsl(222 47% 15%), hsl(222 47% 11%));
+}
+
+body.dark-theme::before {
+    content: "";
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 512px;
+    height: 512px;
+    z-index: -1;
+    background-image: url('../assets/images/java-white.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    opacity: 0.04;
+    pointer-events: none;
+    filter: brightness(1);
+}
+
+body.dark-theme .card {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+body.dark-theme header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-color);
+}
+
+body.dark-theme footer {
+    background-color: var(--bg-color);
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-color);
+}
+
+body.dark-theme a {
+    color: var(--text-color);
+}
 

@@ -3,7 +3,7 @@ function createFooter() {
     if (!container) return;
 
     const footer = document.createElement('footer');
-    footer.className = 'fixed-bottom bg-white text-center py-4 shadow';
+    footer.className = 'fixed-bottom border-top text-center py-2';
     footer.innerHTML = `
         <div class="container">
             <p class="mb-0">&copy; 2026 Errolito Lopez. All Rights Reserved.</p>
