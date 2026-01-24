@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Errolito Lopez - Resume</title>
+    <title>Errolito Lopez - RESUME</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -12,18 +12,23 @@
 </head>
 <body>
 
-<div id="button-container"
-     class="position-fixed top-0 start-0 p-4 gap-2">
-    <a
-            href="/"
-            class="btn btn-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm mb-2"
-            aria-label="Home">
-        <i class="bi bi-arrow-left"></i>
-    </a>
+<div id="header-container"></div>
 
+<div id="back-button-container" class="position-fixed top start-0 mt-3">
+    <div class="container">
+        <a
+                href="/"
+                class="btn btn-primary rounded-circle mb-2"
+                aria-label="Home">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+    </div>
+</div>
+
+<div id="media-button-container" class="position-fixed bottom-0 end-0 my-5 mx-2">
     <button
             type="button"
-            class="theme-toggle-btn btn btn-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm mb-2"
+            class="btn btn-primary rounded-circle mb-2"
             id="printButton"
             aria-label="Print Resume">
         <i class="bi bi-printer"></i>
@@ -32,74 +37,78 @@
     <a
             href="assets/pdf/Errolito%20Lopez%20-%20Resume.pdf"
             download
-            class="btn btn-custom rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+            class="btn btn-primary rounded-circle mb-2"
             aria-label="Download Resume">
         <i class="bi bi-download"></i>
     </a>
-
 </div>
-
 
 <div class="a4-pages-wrapper">
     <div class="a4-page">
-        <h1 class="text-center mb-0 fw-bold">ERROLITO D. LOPEZ</h1>
-        <h3 class="text-center fw-bold">Java Developer</h3>
-
-        <hr>
-
-        <div class="container d-flex justify-content-center">
-            <div class="d-flex align-items-center gap-3 icon">
-                <a href="mailto:errolitolopez@gmail.com" class="icon-link d-flex align-items-center gap-2">
-                    <i class="bi bi-envelope-fill fs-5" style="line-height: 1;"></i>
+        <div class="row">
+            <h1 class="text-center mb-0 fw-bold">ERROLITO D. LOPEZ</h1>
+            <h3 class="text-center fw-bold">Java Developer</h3>
+        </div>
+        <div class="row">
+            <hr class="mb-2">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <a href="mailto:errolitolopez@gmail.com" class="icon-link d-flex align-items-center">
+                    <i class="bi bi-envelope fs-5 lh-sm"></i>
                     <span>errolitolopez@gmail.com</span>
                 </a>
+            </div>
 
-                <a href="tel:+639999138970" class="icon-link d-flex align-items-center gap-2">
-                    <i class="bi bi-telephone-fill fs-5" style="line-height: 1;"></i>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <a href="tel:+639999138970" class="icon-link d-flex align-items-center">
+                    <i class="bi bi-telephone fs-5 lh-sm"></i>
                     <span>+639999138970</span>
                 </a>
+            </div>
 
-                <a href="https://share.google/Fn3gCEnge5pFtqfIn" class="icon-link d-flex align-items-center gap-2">
-                    <i class="bi bi-geo-alt-fill fs-5" style="line-height: 1;"></i>
-                    <span>Baliwag City, Bulacan, Philippines</span>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-nowrap">
+                <a href="https://share.google/Fn3gCEnge5pFtqfIn" class="icon-link d-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-5 lh-sm"></i>
+                    <span>Baliwag, Bulacan, Philippines</span>
                 </a>
             </div>
-        </div>
 
-        <div class="container d-flex justify-content-center p-1">
-            <div class="d-flex align-items-center gap-3 icon">
-                <a href="https://github.com/errolitolopez" class="icon-link d-flex align-items-center gap-2">
-                    <i class="bi bi-github fs-5" style="line-height: 1;"></i>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <a href="https://github.com/errolitolopez" class="icon-link d-flex align-items-center">
+                    <i class="bi bi-github fs-5 lh-sm"></i>
                     <span>errolitolopez</span>
                 </a>
+            </div>
 
-                <a href="https://errolitolopez.site" class="icon-link d-flex align-items-center gap-2">
-                    <i class="bi bi-globe2 fs-5" style="line-height: 1;"></i>
-                    <span>https://errolitolopez.site</span>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <a href="https://errolitolopez.site" class="icon-link d-flex align-items-center">
+                    <i class="bi bi-globe fs-5 lh-sm"></i>
+                    <span>errolitolopez.site</span>
                 </a>
+            </div>
 
-                <a href="https://db2spring.site" class="icon-link d-flex align-items-center gap-2">
-                    <i class="bi bi-globe2 fs-5" style="line-height: 1;"></i>
-                    <span>https://db2spring.site</span>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-nowrap">
+                <a href="https://db2spring.site" class="icon-link d-flex align-items-center">
+                    <i class="bi bi-globe fs-5 lh-sm"></i>
+                    <span>db2spring.site</span>
                 </a>
             </div>
         </div>
+        <div class="row">
+            <hr class="mb-3 mt-3">
+            <h4 class="fw-bold">SUMMARY</h4>
+            <h6>I’m a Java Developer with 5+ years of experience. I’ve mainly worked with Java and Spring Boot. I’ve
+                contributed to projects ranging from web applications to REST API, focusing on clean code, performance,
+                and scalable architecture.
+            </h6>
 
-        <hr>
+        </div>
+        <div class="row">
+            <hr class="mb-3 mt-3">
 
-        <h4 class="fw-bold">SUMMARY</h4>
-        <h6>I’m a Java Developer with 5+ years of experience. I’ve mainly worked with Java and Spring Boot. I’ve
-            contributed to projects ranging from web applications to REST API, focusing on clean code, performance, and
-            scalable architecture.
-        </h6>
+            <h4 class="fw-bold">SKILLS</h4>
 
-        <hr>
-
-        <h4 class="fw-bold">SKILLS AND TOOLS</h4>
-
-        <div class="d-flex flex-row flex-nowrap justify-content-between">
-            <div class="p-2">
-                <ul>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <ul class="lh-sm text-nowrap m-0">
                     <li>Java</li>
                     <li>Spring Boot</li>
                     <li>Angular, Ionic</li>
@@ -107,8 +116,9 @@
                     <li>Git</li>
                 </ul>
             </div>
-            <div class="p-2">
-                <ul>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <ul class="lh-sm text-nowrap m-0">
                     <li>Maven, Gradle</li>
                     <li>RDBMS, PostgreSQL, MySQL</li>
                     <li>Redis, Caching</li>
@@ -116,8 +126,9 @@
                     <li>Unit Testing, JUnit, Mockito</li>
                 </ul>
             </div>
-            <div class="p-2">
-                <ul>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <ul class="lh-sm text-nowrap m-0">
                     <li>API Development</li>
                     <li>Flyway Database Migration</li>
                     <li>IntelliJ IDEA</li>
@@ -127,141 +138,177 @@
             </div>
         </div>
 
-        <hr>
+        <div class="row">
+            <hr class="mb-3 mt-3">
 
-        <h4 class="mb-1 fw-bold">EMPLOYMENT</h4>
-        <h5 class="fw-bold">Java Developer</h5>
-        <div class="row mb-2 small">
-            <div class="col-sm">Ziaplex, Inc.</div>
-            <div class="col-sm">January 2018 – May 2019</div>
-            <div class="col-sm">Pasig City Philippines</div>
+            <div class="row">
+                <h4 class="mb-1 fw-bold">EMPLOYMENT</h4>
+                <h5 class="fw-bold">Java Developer</h5>
+                <div class="col-sm">Ziaplex, Inc.</div>
+                <div class="col-sm">January 2018 – May 2019</div>
+                <div class="col-sm">Pasig City Philippines</div>
+            </div>
+
+            <div class="row mb-1">
+                <h6 class="fw-bold">Department of Trade and Industries – Trade Statistics</h6>
+                <h6 class="fst-italic small">A web application designed to visualize global trade statistics (exports
+                    and imports) by country.</h6>
+
+                <div class="container">
+                    <ul class="lh-base mt-1 small">
+                        <li>Developed the web application using Java, Spring Boot, MySQL, and Angular.</li>
+                        <li>Collaborated with Quality Assurance and Business Analysts to define and implement system
+                            requirements.
+                        </li>
+                        <li>Created detailed technical documentation.</li>
+                        <li>Performed bug fixes and provided ongoing technical support.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <h6 class="fw-bold">Department of Trade and Industries – Business Name Registration (BNRS)</h6>
+                <h6 class="fst-italic small">A web application which modernizes the business name registration process
+                    for the Department of Trade and Industries.</h6>
+
+                <div class="container">
+                    <ul class="lh-base mt-1 small">
+                        <li>Development the web application using OutSystems low-code platform.</li>
+                        <li>Integrated API communications with GCash to support online payments for business
+                            registration.
+                        </li>
+                        <li>Collaborated with Quality Assurance and Business Analysts to define and implement system
+                            requirements.
+                        </li>
+                        <li>Created detailed technical documentation.</li>
+                        <li>Performed bug fixes and provided ongoing technical support.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <h6 class="mb-0 fw-bold">Department of Trade and Industries – Trade Statistics</h6>
-        <h6 class="fst-italic small">A web application designed to visualize global trade statistics (exports and
-            imports) by country.</h6>
-
-        <ul>
-            <li>Developed the web application using Java, Spring Boot, MySQL, and Angular.</li>
-            <li>Collaborated with Quality Assurance and Business Analysts to define and implement system requirements.
-            </li>
-            <li>Created detailed technical documentation.</li>
-            <li>Performed bug fixes and provided ongoing technical support.</li>
-        </ul>
-
-        <h6 class="mb-0 fw-bold">Department of Trade and Industries – Business Name Registration (BNRS)</h6>
-        <h6 class="fst-italic small">A web application which modernizes the business name registration process for the
-            Department of Trade and Industries.</h6>
-
-        <ul>
-            <li>Development the web application using OutSystems low-code platform.</li>
-            <li>Integrated API communications with GCash to support online payments for business registration.</li>
-            <li>Collaborated with Quality Assurance and Business Analysts to define and implement system requirements.
-            </li>
-            <li>Created detailed technical documentation.</li>
-            <li>Performed bug fixes and provided ongoing technical support.</li>
-        </ul>
     </div>
 
-    <div class="a4-page mt-0">
-        <h5 class="fw-bold">Java Developer</h5>
-        <div class="row mb-2 small">
+    <div class="a4-page">
+        <div class="row">
+            <h5 class="fw-bold">Java Developer</h5>
             <div class="col-sm">White Clock Technologies, Inc.</div>
             <div class="col-sm">May 2019 – July 2020</div>
             <div class="col-sm">Pasig City, Philippines</div>
         </div>
-        <h6 class="mb-0 fw-bold">UnionBank of the Philippines – Generic Corporate Prepaid Card (Payroll System)</h6>
-        <h6 class="fst-italic small">A web application designed to serve external corporate clients for managing their
-            payroll processes.</h6>
-        <ul>
-            <li>Developed the web application using Java, Spring Boot, MySQL, and Angular.</li>
-            <li>Implemented REST API to ensure seamless communication and data exchange between front-end and backend
-                systems.
-            </li>
-            <li>Integrated API communications with Anti-Money Laundering Council and Customer Risk Reduction to support
-                Know Your Customer compliance.
-            </li>
-            <li>Created detailed technical documentation.</li>
-            <li>Performed bug fixes and provided ongoing technical support.</li>
-        </ul>
 
-        <h5 class="fw-bold">Java Developer</h5>
-        <div class="row mb-2 small">
+        <div class="row">
+            <h6 class="fw-bold">UnionBank of the Philippines – Generic Corporate Prepaid Card (Payroll System)</h6>
+            <h6 class="fst-italic small">A web application designed to serve external corporate clients for managing
+                their payroll processes.</h6>
+
+            <div class="container">
+                <ul class="lh-base mt-1 small">
+                    <li>Developed the web application using Java, Spring Boot, MySQL, and Angular.</li>
+                    <li>Implemented REST API to ensure seamless communication and data exchange between front-end and
+                        backend systems.
+                    </li>
+                    <li>Integrated API communications with Anti-Money Laundering Council and Customer Risk Reduction to
+                        support Know Your Customer compliance.
+                    </li>
+                    <li>Created detailed technical documentation.</li>
+                    <li>Performed bug fixes and provided ongoing technical support.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <h5 class="fw-bold">Java Developer</h5>
             <div class="col-sm">SLI Consulting, Inc.</div>
             <div class="col-sm">July 2020 – May 2021</div>
             <div class="col-sm">Makati City, Philippines</div>
         </div>
 
-        <h6 class="mb-0 fw-bold">Robinson’s Bank Motorcycle Inventory Management System</h6>
-        <h6 class="fst-italic small">A web application that tracks motorcycle inventory across multiple locations,
-            including stores and warehouses.</h6>
+        <div class="row">
+            <h6 class="fw-bold">Robinson’s Bank Motorcycle Inventory Management System</h6>
+            <h6 class="fst-italic small">A web application that tracks motorcycle inventory across multiple locations,
+                including stores and warehouses.</h6>
 
-        <ul>
-            <li>Developed the web application using Java, Spring Boot, MySQL, and JavaServer Page.</li>
-            <li>Created detailed technical documentation.</li>
-            <li>Performed bug fixes and provided ongoing technical support.</li>
-        </ul>
+            <div class="container">
+                <ul class="lh-base mt-1 small">
+                    <li>Developed the web application using Java, Spring Boot, MySQL, and JavaServer Page.</li>
+                    <li>Created detailed technical documentation.</li>
+                    <li>Performed bug fixes and provided ongoing technical support.</li>
+                </ul>
+            </div>
+        </div>
 
-        <h5 class="fw-bold">Java Developer</h5>
-
-        <div class="row mb-2 small">
+        <div class="row">
+            <h5 class="fw-bold">Java Developer</h5>
             <div class="col-sm">Flying Future Services, Inc.</div>
             <div class="col-sm">May 2021 – September 2023</div>
             <div class="col-sm">Makati City, Philippines</div>
         </div>
 
-        <h6 class="mb-0 fw-bold">Capital Management System</h6>
-        <h6 class="fst-italic small">A web application that manages customer deposits and withdrawals.</h6>
+        <div class="row mb-1">
+            <h6 class="fw-bold">Capital Management System</h6>
+            <h6 class="fst-italic small">A web application that manages customer deposits and withdrawals.</h6>
 
-        <ul>
-            <li>Developed the web application using Java, Spring Boot, MySQL, and Apache FreeMarker.</li>
-            <li>Developed API for external clients.</li>
-            <li>Managed API integrations for various deposit and withdrawal services, such as GCash, Alipay, Maya,
-                etc.
-            </li>
-            <li>Created detailed technical documentation.</li>
-            <li>Performed bug fixes and provided ongoing technical support.</li>
-        </ul>
-
-        <h6 class="mb-0 fw-bold">Exchange Rate System</h6>
-        <h6 class="fst-italic small">An application that provides up-to-date cryptocurrency and fiat currency exchange
-            data for business use.</h6>
-
-        <ul>
-            <li>Developed the web application using Java, Spring Boot, MySQL, and Apache FreeMarker.</li>
-            <li>Integrated multiple third-party API (Coinbase, Binance, etc.) to ensure accurate and up-to-date exchange
-                rate information.
-            </li>
-            <li>Created detailed technical documentation.</li>
-            <li>Performed bug fixes and provided ongoing technical support.</li>
-        </ul>
-
-        <hr>
-
-        <h4 class="fw-bold">EDUCATION</h4>
-        <h5 class="fw-bold">Bachelor of Science in Information Technology</h5>
-
-        <div class="row small">
-            <div class="col-sm">College of Our Lady of Mercy</div>
-            <div class="col-sm">2013 – 2017</div>
-            <div class="col-sm">Bulacan, Philippines</div>
+            <div class="container">
+                <ul class="lh-base mt-1 small">
+                    <li>Developed the web application using Java, Spring Boot, MySQL, and Apache FreeMarker.</li>
+                    <li>Developed API for external clients.</li>
+                    <li>Managed API integrations for various deposit and withdrawal services, such as GCash, Alipay,
+                        Maya, etc.
+                    </li>
+                    <li>Created detailed technical documentation.</li>
+                    <li>Performed bug fixes and provided ongoing technical support.</li>
+                </ul>
+            </div>
         </div>
 
-        <hr>
+        <div class="row">
+            <h6 class="fw-bold">Exchange Rate System</h6>
+            <h6 class="fst-italic small">An application that provides up-to-date cryptocurrency and fiat currency
+                exchange data for business use.</h6>
 
-        <h4 class="fw-bold mb-1">CHARACTER REFERENCE</h4>
-        <h6 class="fst-italic small">Character references and their contact numbers will be given upon request.</h6>
+            <div class="container">
+                <ul class="lh-base mt-1 small">
+                    <li>Developed the web application using Java, Spring Boot, MySQL, and Apache FreeMarker.</li>
+                    <li>Integrated multiple third-party API (Coinbase, Binance, etc.) to ensure accurate and up-to-date
+                        exchange rate information.
+                    </li>
+                    <li>Created detailed technical documentation.</li>
+                    <li>Performed bug fixes and provided ongoing technical support.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <hr class="mb-2">
+            <h4 class="fw-bold">EDUCATION</h4>
+            <h5 class="fw-bold">Bachelor of Science in Information Technology</h5>
+
+            <div class="row small">
+                <div class="col-sm">College of Our Lady of Mercy</div>
+                <div class="col-sm">2013 – 2017</div>
+                <div class="col-sm">Bulacan, Philippines</div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <hr class="mb-2">
+            <h4 class="fw-bold mb-1">CHARACTER REFERENCE</h4>
+            <h6 class="fst-italic small">Character references and their contact numbers will be given upon request.</h6>
+
+        </div>
+
     </div>
+
+    <div id="footer-container"></div>
 </div>
 
-
-<div id="footer-container" style="margin-top: 400px"></div>
-
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="js/background.js"></script>
 <script src="js/footer.js"></script>
 <script src="js/header.js"></script>
 <script>
+    createFooter();
+    createHeader();
     document.getElementById('printButton').addEventListener('click', function () {
         window.print();
     });
