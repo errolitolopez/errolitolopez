@@ -7,6 +7,7 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/counter.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
 <body style="margin: 5rem 0;">
@@ -68,6 +69,11 @@
     </div>
 </div>
 
+<div class="counter-widget">
+    <div class="counter-label">Visitors</div>
+    <div id="visit-count" class="counter-digits">----</div>
+</div>
+
 <div id="footer-container"></div>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -76,6 +82,23 @@
 <script>
     createFooter();
     createHeader();
+</script>
+<script>
+    // const API_URL = 'http://localhost:8080/api/counters/el/errolitolopez-site-counter/up';
+    const API_URL = 'https://tick3r.onrender.com/api/counters/el/errolitolopez-site-counter/up';
+
+    fetch(API_URL)
+        .then(response => response.json())
+        .then(result => {
+            const count = result?.count;
+            document.getElementById('visit-count').textContent =
+                typeof count === 'number'
+                    ? String(count).padStart(4, '0')
+                    : 'ERR';
+        })
+        .catch(() => {
+            document.getElementById('visit-count').textContent = 'ERR';
+        });
 </script>
 </body>
 </html>
